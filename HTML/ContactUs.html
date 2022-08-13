@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Using meta tag-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Leave us your contact details for more services">
+		<meta name="keywords" content="Contact, Services, Form">
+
+		<!--Title of the page-->
+		<title>
+			Savour | Contact 
+		</title>
+
+		<!--Specifying the reference external CSS file named "External CSS" for using it in this page using href attribute-->
+		<link rel="stylesheet" type="text/css" href="../CSS/External CSS.css">
+
+		<!--Specifying the URL of external script file named "External JS" for using it in this page using src attribute-->
+		<script src="../JavaScript/External JS.js"></script>
+
+		<!--Using internal CSS-->
+		<style>
+			/* For styling section with form */
+			#con-section {
+				text-align: center;
+				font-family: cursive;
+				padding: 10px;
+				background-color: whitesmoke;
+				border-radius: 10px;
+				line-height: 34px;
+				display: flex;
+
+			}
+
+			/* For using different background image and style using CSS properties */
+			#backgroundSection1 {
+				display: flex;
+				flex-direction: column;
+				padding: 20px;
+				height: 400px;
+				justify-content: center;
+				align-items: center;
+				background-image: url("../Image/bgimage2.jpg");
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				color: whitesmoke;
+				margin: 3px;
+				font-family: cursive;
+				border-radius: 10px;
+				}
+
+			/* For styling the input box having text type*/
+			input[type = text] {
+			    height: 33px;
+			    width: 251px;
+			    box-sizing: border-box;
+			    border-radius: 10px;
+			    background-color: #dddddd;
+			    padding: 10px;
+			    border: 2px transparent;
+			    outline: none;
+			    transition: all;
+			   	transition-delay: 0.2s;
+			}
+
+			/* For styling input box after it has been clicked */
+			input[type = text]:focus {
+				border: 2px solid;
+				background-color: white;
+			}
+
+			/* For styling the input box having submit type*/
+			input[type = submit]{
+				border-radius: 10px;
+				cursor: pointer;
+				background-color: #dddddd ;
+				font-family: cursive;
+				width: 80px;
+				height: 32px;
+				font-size: 1em;
+			}
+
+			/* For styling text area */
+			.textarea {
+				border-radius: 10px;
+			    background-color: #dddddd;
+			    border: 2px transparent;
+			    outline: none;
+			    transition: all;
+			   	transition-delay: 0.2s;
+			   	padding: 10px;
+			}
+
+			/* For styling text area after it has been clicked */
+			.textarea:focus {
+				border: 2px solid;
+				background-color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<!--Navigation portion of the webpage-->
+		<nav>
+			<!--
+			  Section for adding and styling the logo of the store
+			  id attribute has been used which is used is used to point to a specific style declaration in external CSS file.
+			-->
+			<div id="logo">
+				<img src="../Image/LOGO.png">
+			</div>
+			<!--Navigation bar of Home page by styling with inline CSS-->
+			<table style="width:70%; margin:auto;">
+				<tr style="height:50%; font-family: sans-serif;">
+					<!--using href attribute to add links to other pages-->
+					<th class="navigation">
+						<a href="../Home.html"> Home </a>
+					</th>
+					<th class="navigation">
+						<a href="Products.html"> Products </a>
+					</th>
+					<th class="navigation">
+						<a href="Blog.html"> Blog </a>
+					</th>
+					<th class="navigation">
+						<a href="Research.html"> Research </a>
+					</th>
+					<th class = "navigationcurrent">
+						<a href="#"> Contact Us </a>
+					</th>
+				</tr>
+			<table>
+		</nav>
+		<!--Section for background image with text over it-->
+		<section id="backgroundSection1">
+			<!--Using class attribute for implementing CSS-->
+			<h1 class = "h1-primary"> Let's make lasting relationship.</h1>
+			<p class="p-primary"> Enriching customer's experience is </br> our main priority. </p>
+		</section>
+
+		<!--Section with contact form and details regarding store-->
+		<section id="con-section">
+			<!--Division containing contact form-->
+			<div class="contactsectionleft">
+				<header>
+					<h2> Your Contact Info</h2>
+				</header>
+				<!--Form that on clicking submit executes validate() function-->
+				<form name="validation" onsubmit="validate()">
+					First name: </br> <input type="text" name="firstname" placeholder="First Name..."> </br>
+					Last name: </br> <input type="text" name="lastname" placeholder="Last Name..."> </br>
+					Gender: <input type="radio" name="gender" value="male" checked> Male <input type="radio" name="gender" value="female"> Female </br>
+					Email address: </br> <input type="text" name="email" placeholder="Email..."> </br>
+					Phone/Mobile number: </br> <input type="text" name="phonenumber" placeholder="Phone number..."> </br>
+					Message: </br>
+					<textarea class="textarea" name="message" rows="20" cols="40" placeholder="Enter message"></textarea> </br>
+					<input type="submit" name="submit" value="Submit"> 
+				</form>
+			</div>
+			<!--Division containing the details regarding contact information of the store-->
+			<div class="contactsectionright">
+				<h2> For further enquiry...</h2>
+				<p> You can contact us at </p>
+				<p> Phone: +977-9834793471 </p>
+				<p> Email address: savour.estore@gmail.com </p> <br> <br> <br> <br> <br> 
+				<p> You can also visit us at <p>
+					Tokha - 8, Milantole, Kathmandu, Nepal.
+				<br> <br>
+				<img src="../Image/logopng.png">
+			</div>
+		</section>
+
+		<!--Using internal JavaScript-->
+		<script type="text/javascript">
+			//function that informs about the valid form submission
+			function validate() {
+				var firstname = document.forms["validation"]["firstname"].value;
+				var lastname = document.forms["validation"]["lastname"].value;
+				var gender = document.forms["validation"]["gender"].value;
+				var email = document.forms["validation"]["email"].value;
+				var phonenumber = document.forms["validation"]["phonenumber"].value;
+				var message = document.forms["validation"]["message"].value;
+
+				if(firstname == "" || lastname == "" || gender == "" || email == "" || phonenumber == "" || message == ""){
+					alert("Each section of the form need to be filled. Please fill out remaining sections. Thank you !");
+				} else {
+					alert("The form has been successfully submitted. We will get back to you. Thank you. ");
+				}
+			}
+		</script>
+
+		<!--Footer section of the page-->
+		<footer>
+			<!--using class attribute for styling footer section in external CSS and layouting three divisions as flex box-->
+			<div class="footersection">
+				<!--Division for subscribing newsletter with input box and button-->
+				<div class="footer-left">
+					<p class="p-primary">Subscribe to our newsletter ! </p>
+					<input id = "email" type="text" name="Email" placeholder="Your Email"> <br>
+					<!--button that executes a function on button click-->
+					<button onclick="subscribe()"> Subscribe </button> </br>
+				</div>
+				<!--Division for "about us" with heading and a paragraph-->
+				<div class="footer-center">
+					<h2> About us </h2>
+					<p> Savour is a store dedicated to selling quality electronic gadgets at affordable price. <br>
+						Based in Kathmandu, you can find every gadgets and accessories of your needs.  </p> 
+				</div>
+				<!--Division with various links for navigating styled by internal CSS-->
+				<div class="footer-right">
+					<ul class="footer-list">
+						<li> <h3>Explore </h3></li>
+						<!--Using inline CSS to change text color-->
+						<li><a href="../Home.html" style="color: white;"> Home </a>
+						<li><a href="Products.html" style="color: white;"> Products </a>
+						<li><a href="Blog.html" style="color: white;"> Blog</a></li>
+						<li><a href="Research.html" style="color: white;"> Research</a></li>
+						<li><a href="#" style="color: white;">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+			<br>
+			<img src="../Image/logopng.png">
+			<p> Copyright &copy; Savour 2021. All rights reserved! </p>
+		</footer>
+	</body>	
+</html>

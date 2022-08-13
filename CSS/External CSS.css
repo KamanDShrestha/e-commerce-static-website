@@ -1,0 +1,125 @@
+/* For styling unvisited link */
+a:link {
+	color:#4361EE;
+}
+
+/* For styling visited link */
+a:visited {
+	color:#3A0CA3;
+}
+
+/* For styling link when the user mouses over it */
+a:hover {
+	color:#3587A4;
+}
+
+/* For styling link  the moment it is clicked */
+a:active {
+	color:#168AAD;
+}
+
+/* For styling the column/page of the navigation bar which is in use*/
+.navigationcurrent {
+	background-color:#90E0EF;
+	height:30px;
+	border: 1px grey solid;
+	border-radius: 10px;
+}
+/* For styling the column/page of the navigation bar */
+.navigation {
+	background-color:white;
+	height:30px;
+	border: 1px grey solid;
+	border-radius: 10px;
+}
+
+/* For styling the logo */
+#logo {
+	height: 1px;
+	width: 1px;
+	margin: 2px;
+}
+
+/* For adding and styling backGround image*/
+#backgroundSection {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	height: 500px;
+	justify-content: center;
+	align-items: center;
+	background-image: url("../Image/bgimage.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: ghostwhite;
+	margin: 3px;
+	font-family: cursive;
+	border-radius: 10px;
+}
+
+/* For structuring the contact section in contact page*/
+.contactsectionleft {
+	flex: 75%;
+	background-color: white;
+}
+
+/* For structuring the contact section in contact page*/
+.contactsectionright {
+	flex: 25%;
+}
+
+/* For styling footer section */
+footer{
+	background-color: #445268;
+	margin: 10px;
+	text-align: center;
+	padding: 20px;
+	color: white;
+	font-family: cursive;
+	border-radius: 10px;
+}
+/* For structuring different divisions in footer section */
+.footersection {
+	display: flex;
+}
+
+/* For styling left division in footer section */
+.footer-left{
+	margin: 10px;
+	border-right: 2px solid;
+	padding: 10px;
+}
+
+/* For styling center division in footer section */
+.footer-center {
+	margin: 10px;
+	border-right: 2px solid;
+	padding: 10px;
+}
+
+/* For styling right division in footer section */
+.footer-right {
+	margin: 10px;
+	padding-left: 70px;
+}
+
+/* For styling unordered list in footer section */
+.footer-list {
+	list-style-type: none;
+}
+
+/* For styling h1 tag */
+.h1-primary {
+	font-size: 2.8rem;
+	padding: 1px;
+	font-family: cursive;
+	text-align: center;
+}
+
+/* For styling p tag*/
+.p-primary {
+	font-size: 1.2 rem;
+	padding: 5px;
+	text-align: center;
+}

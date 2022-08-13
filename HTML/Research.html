@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Using meta tag-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Research done through while making the website">
+		<meta name="keywords" content="Research, References">
+
+		<!--Title of the page-->
+		<title>
+			Research
+		</title>
+
+		<!--Specifying the URL of external script file named "External JS" for using it in this page using src attribute-->
+		<script src="../JavaScript/External JS.js"></script>
+
+		<!--Specifying the reference external CSS file named "External CSS" for using it in this page using href attribute-->
+		<link rel="stylesheet" type="text/css" href="../CSS/External CSS.css">
+		<!--Using internal CSS-->
+		<style type="text/css">
+			/* Styling the whole research section using id attribute and CSS properties */
+			#researchsection {
+				background-color: whitesmoke;
+				border-radius: 10px;
+			}
+
+			/* Styling the single research portion */
+			.researchcontainer {
+				display: flex;
+				justify-content: center;
+			}
+			
+			/* Styling developed webpage section of research portion */
+			.builtwebpage {
+				background-color: white;
+				border-radius: 10px;
+				padding: 10px;
+				margin: 10px;
+				flex: 50%;
+			}
+
+			/* Styling reference webpage section of research portion */
+			.referencewebpage {
+				padding: 10px;
+				margin: 10px;
+				border-radius: 10px;
+				background-color: white;
+				flex: 50%;
+			}
+
+			/* Styling the image in reference webpage section */
+			.referenceimage {
+				height: 500px;
+				width: 630px;
+			}
+
+			/* Styling the image in built webpage section */
+			.builtimage {
+				height: 500px;
+				width: 630px;
+			}
+
+			/* Styling the section under figure tag */
+			figure {
+				margin: 5px;
+			}
+
+			/* Styling the section containing the comparision between webpages */
+			.researchdetails {
+				text-align: center;
+			}
+
+			/* For styling the input box having text type*/
+			input[type = text] {
+			    height: 33px;
+			    width: 251px;
+			    box-sizing: border-box;
+			    border-radius: 10px;
+			    background-color: #dddddd;
+			    padding: 10px;
+			    border: 2px transparent;
+			    outline: none;
+			    transition: all;
+			   	transition-delay: 0.2s;
+			}
+
+			/* For styling input box after it has been clicked */
+			input[type = text]:focus {
+				border: 2px solid;
+				background-color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<!--Navigation portion of the webpage-->
+		<nav>
+			<!--
+			  Section for adding and styling the logo of the store
+			  id attribute has been used which is used is used to point to a specific style declaration in external CSS file.
+			-->
+			<div id="logo">
+				<img src="../Image/LOGO.png">
+			</div>
+			<!--Navigation bar of Home page by styling with inline CSS-->
+			<table style="width:70%; margin:auto;">
+				<tr style="height:50%; font-family: sans-serif;">
+					<!--using href attribute to add links to other pages-->
+					<th class="navigation">
+						<a href="../Home.html"> Home </a>
+					</th>
+					<th class="navigation">
+						<a href="Products.html"> Products </a>
+					</th>
+					<th class="navigation">
+						<a href="Blog.html"> Blog </a>
+					</th>
+					<th class="navigationcurrent">
+						<a href="#"> Research </a>
+					</th>
+					<th class = "navigation">
+						<a href="ContactUs.html"> Contact Us </a>
+					</th>
+				</tr>
+			<table>
+		</nav>
+
+		<!--Section with background image and text over it-->			
+		<section id="backgroundSection">
+			<!--Using class attribute for implementing CSS-->
+			<h1 class = "h1-primary"> References taken while developing this website </h1>
+		</section>
+
+		<!--Section containing the research -->
+		<section id="researchsection">
+			<!--Heading of the page-->
+			<header>
+			<h1 class="h1-primary"> Research Section </h1> <hr>
+			</header>
+			<!--Division for one research portion-->
+			<div class="researchcontainer">
+				<!--Division for built webpage-->
+				<div class="builtwebpage">
+					<!--Styling using internal CSS-->
+					<h2 style="text-align: center;">Webpage/Section for the assignment</h2>
+					<figure>
+						<!--Styling image using CSS with class attribute-->
+						<img src="../Image/Research_myproduct.png" class="builtimage">
+						<figcaption style="font-size: 12px;">
+							<!--Adding a source of image-->
+							Featured Product section of Products page <a href="Products.html"> (Source) </a> 
+						</figcaption>	
+					</figure>
+				</div>
+
+				<!--Division for reference webpage-->
+				<div class="referencewebpage">
+					<!--Styling using internal CSS-->
+					<h2 style="text-align: center;">Reference webpage/section</h2>
+					<figure>
+						<!--Styling image using CSS with class attribute-->
+						<img src="../Image/Research_product.png" class="referenceimage">
+						<!--Adding a source of image-->
+						<figcaption style="font-size: 12px;"> Details section of a product of Amazon  <a href="https://www.amazon.in/Samsung-Ultra-Snapdragon-Phantom-Storage/dp/B08V8L67N2/ref=sr_1_2?crid=1CUVYM0TSMFPW&keywords=samsung+galaxy+s21+ultra+5g&qid=1642397612&sprefix=samsung+galay+S21%2Caps%2C1432&sr=8-2"> (Source) </a> 
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+
+			<!--Division for details regarding research-->
+			<div class="researchdetails">
+				<p> While making the above section for the Products page, reference is taken from the particular product details section of Amazon website. This section is present in Products page of electronic gadgets' store. The reference page can be accessed by clicking on any product on the website. </p>
+				<p>
+				Just like in the reference website, a image of the product is inserted for providing visual properties regarding the product.  Also the name of the product is highlighted using &lt;h2&gt; tag. Buttons for  buying the product and adding that into wishlist are added. A section for details regarding the products is  also created as like in reference website. For providing information about delivery option, a icon is also inserted. An option for changing the image is also added in the section just like in reference website.</p>
+				<p> But instead of changing into different images displayed in left column like in reference page, a button is used in the Products page. This button changes the image when clicked. Along with that, tagline of the product is also added with emphasizing it using &lt;em&gt; tag. A section for ratings is not added. Along with that, different sections regarding discounts, delivery information, price comparison and extra details are also not added. A section for advertisement is not included which is present in reference website.</p>
+				<p>For inserting the image in the section, &lt;img&gt;  is used and it is styled by using different CSS property. Both the image section and its details section are structured by using flex property. Details regarding the products are listed using &lt;ul&gt;  and &lt;li&gt;  tags and are styled using CSS. External, internal as well as inline CSS have been used. </p>
+			</div>
+			<hr>
+			<br> <br>
+			<!--Division for another research portion-->
+			<div class="researchcontainer">
+				<!--Division for another built webpage-->
+				<div class="builtwebpage">
+					<!--Styling using internal CSS-->
+					<h2 style="text-align: center;">Webpage/Section for the assignment</h2>
+					<figure>
+						<!--Styling image using CSS with class attribute-->
+						<img src="../Image/Research_myproductSection.png" class="builtimage">
+						<figcaption style="font-size: 12px;"> 
+							<!--Adding source of image-->
+							Product section for Laptops of Products page <a href="Products.html"> (Source) </a> 
+						</figcaption>	
+					</figure>
+				</div>
+
+				<!--Division for another reference webpage-->
+				<div class="referencewebpage">
+					<!--Styling using internal CSS-->
+					<h2 style="text-align: center;">Reference webpage/section</h2>
+					<figure>
+						<!--Styling image using CSS with class attribute-->
+						<img src="../Image/Research_productSection.png" class="referenceimage">
+						<figcaption style="font-size: 12px;">
+						<!--Adding source of image-->
+						 Products section page of Daraz website   <a href="https://www.daraz.com.np/laptops/?page=1&sort=pricedesc&spm=a2a0e.11779170.cate_1.4.71f82d2bmgO3z2&style=wf"> (Source) </a> 
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+			<!--Division for another details regarding research-->
+			<div class="researchdetails">
+				<p> For making this section of Products page, products section of Laptop categories of Daraz website is taken as reference. This section is within the Products page. The reference page can be accessed by clicking on any product categories. </p>
+				<p> Just like in reference website, the section comprises of images of products with their name and details. In this section of Products page, name of the products are highlighted using header tag. Along with that, taglines of the manufacturing companies are emphasized. In both pages, price of the products have been highlighted using different text color. White background image has been used in both sections. Details regarding the products are also included in electronic gadgets' store website as like in reference page.   </p>
+				<p> The page from reference website also comprises of functionality to navigate and sort by the name of brands which is not present in my webpage. Other functionalities such as sorting out by price, view modes etc are not present in the Products webpage. As search bar is not present in Products page, there is no functionality to search the products. </p>
+				<p> The section where different products with their details are included is made using flex property. Using  flex box, each products has been in seperate divisions. &lt;img&gt; tag is used for including the products' images and are styled using differnt CSS property such as height, margin, padding and so on. For styling the texts &lt;h3&gt;, &lt;p&gt; tags are used. &lt;div&gt; is used for specifying the divisions and these different tags are assigned different class and are styled using CSS. Buttons are made by using &lt;button&gt; tag. </p>
+			</div>
+			<hr>
+			<br> <br>
+			<!--Division for another research portion-->
+			<div class="researchcontainer">
+				<!--Division for another built webpage-->
+				<div class="builtwebpage">
+					<h2 style="text-align: center;">Webpage/Section for the assignment</h2>
+					<figure>
+						<img src="../Image/Research_mycontact.png" class="builtimage">
+						<figcaption style="font-size: 12px;">
+						 Contact Page of the website <a href="ContactUs.html"> (Source) </a> 
+						</figcaption>	
+					</figure>
+				</div>
+				<!--Division for another reference webpage-->
+				<div class="referencewebpage">
+					<h2 style="text-align: center;">Reference webpage/section</h2>
+					<figure>
+						<img src="../Image/Research_contact.png" class="referenceimage">
+						<figcaption style="font-size: 12px;">
+						 Contact page of reference website   <a href="https://www.weifieldcontracting.com/contact/"> (Source) </a> 
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+			<!--Division for details regarding research styled using CSS with class attribute-->
+			<div class="researchdetails">
+				<p> 
+					While making the contact page, contact page of Weifield Group's website is taken as reference. The contact page comprises of section with background image with text over it and a section which comprises of a form and details of the electronic gadgets' store along with footer section. The contact page of the reference website can be viewed through navigation bar. 
+				</p>
+				<p> 
+					Both the webpages comprises of a section for a form where the users can submit their names, emails and other details. In the contact page of the electronic gadgets' store, users can also submit their phone number. This form is used as a complaint and enquiry form where users can submit their issues in message box. In details section, details regarding store are included along with logo of the store. In reference page, address of the organization is included in that section along with a award given to the organization. 
+				</p>
+				<p> 
+					 For distinguishing these sections, flex property is used in CSS. In one flex box, where form is to be submitted, &lt;form&gt; tag is used in HTML document. Inside &lt;form&gt; tag, input tag is used for input box with their titles as First Name, Email etc. &lt;textarea&gt; tag is used along with rows and cols attributes for text box. Internal, External as well as Inline CSS is used for styling.  In another flex, &lt;p&gt; tag is used for displaying details and &lt;img&gt; tag is used for adding the logo. &lt;br&gt; tag is also used for line break. For validating the form, a function is also created in JavaScript
+				</p>
+			</div>
+			<hr>
+			<br> <br>
+
+			<!--Division for another research portion-->
+			<div class="researchcontainer">
+				<!--Division for another built webpage-->
+				<div class="builtwebpage">
+					<h2 style="text-align: center;">Webpage/Section for the assignment</h2>
+					<figure>
+						<img src="../Image/Research_myhome.png" class="builtimage">
+						<figcaption style="font-size: 12px;">
+						 Home Page of the website <a href="../Home.html"> (Source) </a> 
+						</figcaption>	
+					</figure>
+				</div>
+				<!--Division for another reference webpage-->
+				<div class="referencewebpage">
+					<h2 style="text-align: center;">Reference webpage/section</h2>
+					<figure>
+						<img src="../Image/Research_home.png" class="referenceimage">
+						<figcaption style="font-size: 12px;">
+						 Home page of reference website   <a href="https://sierradesigns.com"> (Source) </a> 
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+			<!--Another division for details regarding research styled by internal CSS using class attribute -->
+			<div class="researchdetails">
+				<p> 
+					While making the home page, home page of Sierra Designs's website is taken as reference. The home page comprises of section with background image with text over it and a section which comprises of different products that are sold in the store. Both the home pages are can be accessed immediately after websites are opened.
+				</p>
+				<p> 
+					Both the homepages comprise of navigation bar with the stores' logo on the left side. Navigation bar of the reference home page also has functionalities to search products, sign in user's account, view dealer's location etc. The navigation bar of the electronic gadgets' store does not have such functionalities.  
+				</p>
+				<p> 
+					Both home pages have a background image with text over it and background image do not cover navigation bars. Both background images have theme relating to their store. Along with the text, button is also present in both home pages from which products page can be accessed. Reference home page has "Shop Now" as a button and electronic gadgets' store homepage has "Explore Now" as the button. Additionally, a button with "Welcoming you" is also added in store's home page which changes the text content over the background image. 
+				</p>
+				<p>
+					For making navigation bar in the home page of store's website, &lt;nav&gt; tag is used with &lt;table&gt; tag. Each link is written inside the single row using &lt;tr&gt;. For adding logo, &lt;img&gt; tag is used. Background image is added by using backgroundimage property in external CSS file and it is styled using different attributes. Text are also styled using &lt;h1&gt; and &lt;p&gt; tag with attributes. Buttons are made using &lt;button&gt; tag with &lt;a&gt; tag for linking to Products page.
+				</p>
+			</div>
+			<hr>
+			<br> <br>
+
+			<!--Another division for research portion-->
+			<div class="researchcontainer">
+				<!--Another division for built webpage-->
+				<div class="builtwebpage">
+					<h2 style="text-align: center;">Webpage/Section for the assignment</h2>
+					<figure>
+						<img src="../Image/Research_myfooter.png" class="builtimage">
+						<figcaption style="font-size: 12px;">
+						 Footer section of the website <a href="../Home.html"> (Source) </a> 
+						</figcaption>	
+					</figure>
+				</div>
+				<!--Another division for reference webpage-->
+				<div class="referencewebpage">
+					<h2 style="text-align: center;">Reference webpage/section</h2>
+					<figure>
+						<img src="../Image/Research_footer.png" class="referenceimage">
+						<figcaption style="font-size: 12px;">
+						 Footer section of reference website   <a href="https://tworobbers.com/"> (Source) </a> 
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+
+			<!--Another divison for details regarding research-->
+			<div class="researchdetails">
+				<p> 
+					While making the footer section, footer section of Two Robbers's website is taken as reference. The footer section comprises of a section styled by flex box property where three separate divisions are created including Newsletter, About us and Explore. This footer is developed for all webpages. In reference website, Sign Up section along with different links and logo are present.  
+				</p>
+				<p> 
+					The links in footer section of webpages developed for electronic gadgets' store leads to different webpages including Home, Products, Blog , Research and Contact Us. Similarily, in reference websites, the links opens different pages including Products, Contact, FAQ etc. Logo of the respective stores are present in both footers of websites. 
+				</p>
+				<p> 
+					In footer section of electronic gadgets' store, border lines are added for separating the divisions which are not present in reference website. In reference website, links named as Terms and Privacy leads to different webpages which are not created for the assignment. 
+				</p>
+				<p>
+					These three divisions are styled by using flex property along with margin and padding. &lt;input&gt; tag is used for taking input in newsletter section. border-right property is used in external CSS file using class for adding the separation lines. &lt;h1&gt;, &lt;h3&gt;, &lt;p&gt; is used for structuring the text and styling it. &lt;ul&gt; with &lt;li&gt; tags are used for listing links created by using &lt;a&gt; tag. &lt;img&gt; tag is used for adding logo in the footer section. 
+				</p>
+			</div>
+			<hr>
+			<br> <br>
+		</section>
+		<!--Footer section of the page-->
+		<footer>
+			<!--using class attribute for styling footer section in external CSS and layouting three divisions as flex box-->
+			<div class="footersection">
+				<!--Division for subscribing newsletter with input box and button-->
+				<div class="footer-left">
+					<p class="p-primary">Subscribe to our newsletter ! </p>
+					<input id = "email" type="text" name="Email" placeholder="Your Email"> <br>
+					<button onclick="subscribe()"> Subscribe </button> </br>
+				</div>
+				<!--Division for "about us" with heading and a paragraph-->
+				<div class="footer-center">
+					<h2> About us </h2>
+					<p> Savour is a store dedicated to selling quality electronic gadgets at affordable price. <br>
+						Based in Kathmandu, you can find every gadgets and accessories of your needs.  </p> 
+				</div>
+				<!--Division with various links for navigating styled by internal CSS-->
+				<div class="footer-right">
+					<ul class="footer-list">
+						<li> <h3>Explore </h3></li>
+						<li><a href="../Home.html" style="color: white;"> Home </a>
+						<li><a href="Products.html" style="color: white;"> Products </a>
+						<!--Using inline CSS to change text color-->
+						<li><a href="Blog.html" style="color: white;"> Blog</a></li>
+						<li><a href="#" style="color: white;"> Research</a></li>
+						<li><a href="ContactUs.html" style="color: white;">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+			<br>
+			<img src="../Image/logopng.png">
+			<p> Copyright &copy; Savour 2021. All rights reserved! </p>
+		</footer>
+	</body>
+</html>

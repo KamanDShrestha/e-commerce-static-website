@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Using meta tag-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Find best deals on Electronics with offers like no others.">
+		<meta name="keywords" content="Electronics, Gadgets, Best Deals">
+
+		<!--Title of the webpage-->
+		<title>
+			Savour | Leading e-store for all your electronics need
+		</title>
+
+		<!--Specifying the URL of external script file named "External JS" for using it in this page using src attribute-->
+		<script src="./JavaScript/External JS.js"></script>
+
+		<!--
+		  Specifying the reference external CSS file named "External CSS" for using it in this page using href attribute
+		  rel attribute tells that the CSS file is being imported to browser
+		-->
+		<link rel="stylesheet" type="text/css" href="./CSS/External CSS.css">
+
+		<!--Using internal CSS to style the webpage-->
+		<style type="text/css">
+			/* This styles the button which is used for changing HTML content */
+			.buttonclick{
+				padding: 2px;
+				background-color: #36454F;
+				color: whitesmoke;
+				font-family: cursive;
+				border: 1px white solid;
+				font-size: 1.2rem;
+				border-radius: 10px;
+				cursor: pointer;
+			}
+
+			/* 
+			 This specifies a image to be used as background image 
+			 Background image is also styled including its border, position ad size.
+			*/
+			.secondhomebackground {
+				background-image: url("./Image/bgimage2.jpg");
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: cover;
+				border-radius: 10px;
+				margin-top: 0px;
+				margin-bottom: 5px;
+
+
+			}
+
+			/* This specifies the layout of a section to be flex box in this page */
+			.homeProductsSection{
+				display: flex;
+				margin: 10px;
+			}
+			/* This styles the each division of the section where flex box property is used */
+			.homeitem {
+				height: 369px;
+				width: 410px;
+				background-color: whitesmoke;
+				margin: auto;
+				padding: 10px;
+				font-family: cursive;
+				border-radius: 10px;
+
+			}
+			
+			/* This styles the input box having text type including its size, background color, border and transition. */
+			input[type = text] {
+			    height: 33px;
+			    width: 251px;
+			    box-sizing: border-box;
+			    border-radius: 10px;
+			    background-color: #dddddd;
+			    padding: 10px;
+			    border: 2px transparent;
+			    outline: none;
+			    transition: all;
+			   	transition-delay: 0.2s;
+			}
+
+			/* This styles the input box having text type after it has been clicked to fill. */
+			input[type = text]:focus {
+				border: 2px solid;
+				background-color: white;
+			}
+		</style>
+	</head>
+	<!--Body section of the page-->
+	<body>
+		<!--Navigation bar of the page-->
+		<nav>
+			<!--
+			  Section for adding and styling the logo of the store
+			  id attribute has been used which is used is used to point to a specific style declaration in external CSS file.
+			-->
+			<div id="logo">
+				<img src="./Image/LOGO.png">
+			</div>
+			<!--Navigation bar of Home page by styling with inline CSS-->
+			<table style="width:70%; margin:auto;">
+				<tr style="height: 50%; font-family: sans-serif;">
+					<!--assigning class attribute for styling-->
+					<th class="navigationcurrent">
+						<a href="#"> Home </a>
+					</th>
+					<th class="navigation">
+						<!--using href attribute to add links to other pages-->
+						<a href="./HTML/Products.html"> Products </a>
+					</th>
+					<th class="navigation">
+						<a href="./HTML/Blog.html"> Blog </a>
+					</th>
+					<th class="navigation">
+						<a href="./HTML/Research.html"> Research </a>
+					</th>
+					<th class = "navigation">
+						<a href="./HTML/ContactUs.html"> Contact Us </a>
+					</th>
+				</tr>
+			<table>
+		</nav>
+
+		<!--Section with background image and text over it-->			
+		<section id="backgroundSection">
+			<!--Using id and class attribute for implementing CSS and JavaScript-->
+			<h1 class = "h1-primary" id="h-home"> Hello there ! </h1>
+			<!--Overriding external CSS with inline CSS-->
+			<p class="p-primary" id="p-home" style="font-size: large;"> Welcoming you to the leading e-store for <br> electronic gadgets and accessories</p>
+			<p class="p-primary" id="p-home1">Explore around and find accessories that suits you !</p>
+			<!--Executing a function after clicking this button-->
+			<button onclick="changehome()" class="buttonclick">
+					Welcoming you
+			</button> <br> <br>
+			<a href="./HTML/Products.html"><button class="buttonclick"> Explore Now </button></a>
+		</section>
+
+		<!--Section with a background image and different product categories-->
+		<section class="secondhomebackground">
+			<!--Heading of this section-->
+			<header>
+				<!--Overriding external CSS with inline CSS-->
+				<h1 class="h1-primary" style="color: whitesmoke;"> Featured Products </h1> <hr>
+			</header>
+				<!--Division for different product categories-->
+			<div class="homeProductsSection">	
+				<!--Division for a single product category-->
+				<div class="homeitem">
+					<h2> Mobiles <h2>
+						<!--Using inline CSS for setting layout as flex box-->
+					<figure style="display: flex;"> 
+						<!--Styling the image using inline CSS-->
+						<img src="./Image/mobilephone.png" style=" height:100px;">
+						<!--Styling the font using inline CSS-->
+						<figcaption style="font-size: small;">
+							Samsung Galaxy S21 FE
+						</figcaption> </br>
+						<img src="./Image/mobilephone1.png" style=" height:100px;">
+						<figcaption style="font-size: small;">
+							Samsung Galaxy A52
+						</figcaption>
+					</figure>
+					<figure style="display: flex;">
+						<img src="./Image/mobilephone2.png" style=" height:100px;">
+						<figcaption style="font-size: small;">
+							One Plus 9 Pro
+						</figcaption> </br>
+						<img src="./Image/mobilephone3.png" style=" height:100px;">
+						<figcaption style="font-size: small;">
+							Iphone 13 Pro Max
+						</figcaption>
+					</figure>
+					<!--A link to Products page styled using inline CSS-->
+					<a href="./HTML/Products.html" style="font-size: small;"> See more >>> </a>
+				</div>
+				<!--Division for another product category-->
+				<div class="homeitem">
+					<h2> Laptops <h2>
+					<figure style="display: flex;">
+						<img src="./Image/laptopold.png" style=" height:100px;">
+						<figcaption style="font-size: small;">
+							Dell XPS 15
+						</figcaption> </br>
+						<img src="./Image/laptop1.png" style=" height:100px;">
+						<figcaption style="font-size: small;">
+							Asus Zen- </br> book 14
+						</figcaption>
+					</figure>
+					<figure style="display: flex;">
+						<img src="./Image/laptop2.png" style=" height:100px;">
+						<figcaption style="font-size: small;">
+							Legion 5
+						</figcaption> </br>
+						<img src="./Image/laptop3.png" style=" height:100px;">
+						<figcaption style="font-size: small;">
+							Dell Alienware R17
+						</figcaption>
+					</figure>
+					<a href="./HTML/Products.html" style="font-size: small;"> See more >>> </a>
+				</div>
+				<!--Division for another product category-->
+				<div class="homeitem">
+					<h2> Earphones and Headphones <h2>
+					<figure style="display: flex;">
+						<img src="./Image/earphone.png" style=" height:100px;">
+						<figcaption style="font-size: small; display: block;">
+							Redmi Sonicbass Wireless Earphone
+						</figcaption> </br>
+						<img src="./Image/headphone.png" style=" height:100px;">
+						<figcaption style="font-size: small;">
+							Happy Play Headphone
+						</figcaption>
+					</figure>
+					<figure style="display: flex;">
+						<img src="./Image/earphone1.png" style=" height:100px;">
+						<figcaption style="font-size: small; display: block;">
+							Skullcandy JIB Wireless Earphone
+						</figcaption> </br>
+						<img src="./Image/earphone2.png" style=" height:100px;">
+						<figcaption style="font-size: small;">
+							Mi True Wireless Earphone
+						</figcaption>
+					</figure>
+					<a href="./HTML/Products.html" style="font-size: small;"> See more >>> </a>
+				</div>
+			</div>	
+			<!--Another row of different product categories-->
+			<div class="homeProductsSection">
+				<!--Another divison for single product category-->
+				<div class="homeitem">
+					<h2> TVs <h2>
+					<!--Using inline CSS-->	
+					<figure style="display: flex;">
+						<img src="./Image/tv.png" style=" height:100px;">
+						<figcaption style="font-size: small; display: block;">
+							HiSense 32-inch Smart TV
+						</figcaption> </br>
+						<img src="./Image/tv1.png" style=" height:100px;">
+						<figcaption style="font-size: small;">
+							Samsung 40-inch Smart TV
+						</figcaption>
+					</figure>
+					<figure style="display: flex;">
+						<img src="./Image/tv2.png" style=" height:100px;">
+						<figcaption style="font-size: small; display: block;">
+							TCL 32-inch Smart Andrioid TV
+						</figcaption> </br>
+						<img src="./Image/tv3.png" style=" height:100px;">
+						<figcaption style="font-size: small;">
+							Mi 75-inch QLED TV
+						</figcaption>
+					</figure>
+					<a href="./HTML/Products.html" style="font-size: small;"> See more >>> </a>
+				</div>
+			</div>
+		</section>
+
+		<!--Using internal JavaScript-->
+		<script type="text/javascript">
+			//Function which changes the content of the webpage on button click
+			function changehome() {
+				document.getElementById('h-home').innerHTML = "We are here for you.";
+				document.getElementById('p-home').innerHTML = "Enriching our customer's experience is our priority !";
+			}
+		</script>
+
+		<!--Footer section of Home page-->
+		<footer>
+		<!--using class attribute for styling footer section in external CSS and layouting three divisions as flex box-->
+			<div class="footersection">
+				<!--Division for subscribing newsletter with input box and button-->
+				<div class="footer-left">
+					<p class="p-primary">Subscribe to our newsletter ! </p>
+					<input id = "email" type="text" name="Email" placeholder="Your Email"> <br>
+					<button onclick="subscribe()"> Subscribe </button> </br>
+				</div>
+				<!--Division for "about us" with heading and a paragraph-->
+				<div class="footer-center">
+					<h2> About us </h2>
+					<p> Savour is a store dedicated to selling quality electronic gadgets at affordable price. <br>
+						Based in Kathmandu, you can find every gadgets and accessories of your needs.  </p> 
+				</div>
+				<!--Division with various links for navigating styled by internal CSS-->
+				<div class="footer-right">
+					<ul class="footer-list">
+						<li> <h3>Explore </h3></li>
+						<!--Using inline CSS to change text color-->
+						<li><a href="#" style="color: white;"> Home </a>
+						<li><a href="./HTML/Products.html" style="color: white;"> Products </a>
+						<li><a href="./HTML/Blog.html" style="color: white;"> Blog</a></li>
+						<li><a href="./HTML/Research.html" style="color: white;"> Research</a></li>
+						<li><a href="./HTML/ContactUs.html" style="color: white;">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+			<br>
+			<img src="./Image/logopng.png">
+			<p> Copyright &copy; Savour 2021. All rights reserved! </p>
+		</footer>
+	</body>
+</html>

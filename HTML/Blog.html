@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Using meta tag-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Find latest news regarding tech industry and new releases">
+		<meta name="keywords" content="Tech News, New Releases, Latest news">
+
+		<!--Title of the page-->
+		<title>
+			Savour | Blog
+		</title>
+
+		<!--Specifying the reference external CSS file named "External CSS" for using it in this page using href attribute-->
+		<link rel="stylesheet" type="text/css" href="../CSS/External CSS.css">
+
+		<!--Specifying the URL of external script file named "External JS" for using it in this page using src attribute-->
+		<script src="../JavaScript/External JS.js"></script>
+
+		<!--Using internal CSS-->
+		<style type="text/css">
+			/* For styling the heading of blog section */
+			.blogheading {
+			    display: flex;
+			    justify-content: space-between;
+			    align-items: baseline;
+			    padding-left: 30px;
+			    padding-right: 38px;
+			    padding-top: 28px;
+			    margin: -22px;
+			}
+
+			/* For styling image used in blog section */
+			.blogimage {
+				height: 288px;
+	    		width: 454px;
+	    		border-radius: 20px;
+	    		float: left;
+	    		padding: 10px;
+			}
+
+			/* For styling the blog section */
+			.blogsection {
+				background-color: whitesmoke;
+				border-radius: 10px;
+				padding: 10px;
+			}
+			
+			/* For styling the blog in blog section */
+			.blogwriting {
+	    		background-color: white;
+	    		padding: 10px;
+	    		border-radius: 10px;
+			    margin: 10px;
+			    font-family: serif;
+			}
+
+			/* For styling the input box having text type*/
+			input[type = text] {
+			    height: 33px;
+			    width: 251px;
+			    box-sizing: border-box;
+			    border-radius: 10px;
+			    background-color: #dddddd;
+			    padding: 10px;
+			    border: 2px transparent;
+			    outline: none;
+			    transition: all;
+			   	transition-delay: 0.2s;
+			}
+
+			/* For styling input box after it has been clicked */
+			input[type = text]:focus {
+				border: 2px solid;
+				background-color: white;
+			}
+
+			/* For styling other blog section */
+			.otherblog {
+				text-align: center;
+				background-color: white;
+				justify-content: center;
+				padding: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--Navigation portion of the webpage-->
+		<nav>
+			<!--
+			  Section for adding and styling the logo of the store
+			  id attribute has been used which is used is used to point to a specific style declaration in external CSS file.
+			-->
+			<div id="logo">
+				<img src="../Image/LOGO.png">
+			</div>
+			<!--Navigation bar of Home page by styling with inline CSS-->
+			<table style="width:70%; margin:auto;">
+				<tr style="height:50%; font-family: sans-serif;">
+					<!--using href attribute to add links to other pages-->
+					<th class="navigation">
+						<a href="../Home.html"> Home </a>
+					</th>
+					<th class="navigation">
+						<a href="Products.html"> Products </a>
+					</th>
+					<th class="navigationcurrent">
+						<a href="#"> Blog </a>
+					</th>
+					<th class="navigation">
+						<a href="Research.html"> Research </a>
+					</th>
+					<th class = "navigation">
+						<a href="ContactUs.html"> Contact Us </a>
+					</th>
+				</tr>
+			<table>
+		</nav>
+
+		<!--Section for background image with text over it-->
+		<section id="backgroundSection">
+			<!--Using class attribute for implementing CSS-->
+			<h1 class = "h1-primary" style="line-height: 3px;"> Find the latest news regarding tech world. </h1>
+			<p class="p-primary"> Your weekly newsbuddy <br> for byte-size updates.</p>
+		</section>
+
+		<!--Blog Section -->
+		<section>
+			<!--Division for heading styled using internal CSS -->
+			<div class="blogheading">
+				<header>
+				<h2 style="font-family: cursive;"> Our Posts </h2>
+				</header>
+				<!--Using id attribute for adding date using JavaScript-->
+				<p style="float: right;" id="date"></p>
+			</div>
+			<hr>
+			<!--Division for blog section-->
+			<div class="blogsection">
+				<!--Styling image using internal CSS-->
+				<img class ="blogimage" src="../Image/Blogimage.jpg">
+				<!--Division for blog-->
+				<div class="blogwriting" >
+					<h2> Impact of Technology in our daily life</h2>
+					<p style="font-size: large;">Our day typically starts from alarm noises either from our alarm clock or from our mobile phones. A cup of tea or coffee, even milk whatever your preferences gives us that first dose of high energy sugar, made in kettle / coffee brewer. As the day goes on we get to experience ranges of emotions and moments leading to posting them on our social medias. A busy day in our workplace goes through surrounded by technologies including printers, computers, fax machines and with our laptops. Every email we reply to, every call we take, every presentation become possible only by use of technology. A well deserved break in the workplace goes by surfing the internet especially scrolling social medias on our smartphones and keeping up with latest trends. As we approach our home from workplace, we begin to think about some recreational activity to finish the day which end up being watching some TVs/Youtube. We get to socialize and interact with families and friends through Internet using our smart devices. For relaxation we get on our phones searching for some soothing songs. Before bed, a 30 minutes episode of certain viral shows is must. At night our bed awaits and we think "A day well spent."
+					</p>
+					<p style="font-size: large">This day summarizes the impact of technology in our daily life. We probably have not consciously observed impact and need of technology in our daily life. But subconsiously we all know that technologies govern every aspects of our life and without these technologies we can not sustain our life effectively. 
+					</p>
+					<p style="font-size: large" > Taking about social aspect, we have been living in the era of social media. For someone who likes to meet and interact with new people, surge in technologies advancement has been a boon. From meeting the distant cousins/relatives through video calls to meeting and interacting with new people through social medias and online groups/forums such as Facebook, Reddit, Discord and many more, technologies has drastically changes how we communicate with people. <br>
+					With transportation means becoming efficient and every places including streets, shops, travel destination etc on Earth being digitized on Google Maps, travelling has also been so easy for people. Using GPS, anyone can find their location and locate the places they want to visit. <br> 
+					Technologies have been a major cornerstone for flourishing information in educational field. Especially now, with use of them, people from remote areas and villages have access to any information through Internet. Learning platform has also been developed helping in remote learning programme. With this, anyone has been able to access any learning resources from various learning platforms. <br>    
+					Entertainment industry has been booming by use of latest feature cameras, visual editing software and animations. We crave for next big budget movies for entertainment. Along with that, access to them has also been easy due to prevalence of various streaming platforms such as Netflix, Disney +, HBO Max etc that can be accessed through our smart devices. <br>
+					Homes are now turning into its own smart world through the use of Internet of Things (IOT). This major development has made the life more comfortable. Withstanding the force of nature has always been a challenge for a human to overcome and with technologies, human has craft their life in their own image.
+					</p>
+					<p style="font-size: large">As availability of technology has paced exponentially, we have been taking those technologies for granted. We are not valuing these technologies and only taking them on face value without acknowledging their negative aspects. <br> Though people can socialize through social medias, some people are also lurking behind their computers/smartphones commiting crimes including <a href="https://en.wikipedia.org/wiki/Child_grooming">child grooming</a>, hacking, blackmailing, hate speeches etc. Prevalance of technologies has also resulted in increase of such crimes.
+					Sites spreading the misinformation on the Internet have been increasing too. For the ad revenues from clicks on those sites, clickbaits, misinformation, hate speeches have been widespread. <a href="https://www.forbes.com/sites/kalevleetaru/2019/04/18/why-do-we-believe-what-we-read-on-the-internet/?sh=44af6404383a">People are more prone to believing information which are posted on the Internet.</a> So due to this reason, political parties and groups are using social media posts and videos  for spreading agendas, misinformation and hate speeches against other groups. <a href="https://theconversation.com/facebook-has-a-misinformation-problem-and-is-blocking-access-to-data-about-how-much-there-is-and-who-is-affected-164838">Facebook has also been accussed for letting misinformation and hate speeches to be spread regarding COVID, vaccines</a>  and <a href="https://scroll.in/article/976903/facebook-is-tipping-the-scales-in-us-elections-despite-its-promises-to-course-correct">US elections</a>. <br>
+					Along with that, mental health issues are also increasing in teenagers using social medias and other platforms. Though benefits can be reaped from using those social medias, <a href="https://childmind.org/awareness-campaigns/childrens-mental-health-report/2017-childrens-mental-health-report/smartphones-social-media/">there is also evidence that overuse has a negative impact on self-esteem and satisfaction with their lives. </a> <br>
+					Though socializing has been easy, lack of human contact due to use of these technologies has diminished the socializing skills. Now, a person seeks a peace of mind occassionally. But prevalence of these technologies has lead to constant noise surrounding us, ranging from text messages, emails, pop-up ads. These have also resulted in decrease of attention span in people.</p>
+					<p style="font-size: large;">
+					So way too much dependence on technologies without conscious effort is matter of concern. We should be conscious while consuming any content on the Internet. People need to critically analyze those posts and information. We also need to go out occassionaly for meeting with friends. A real sense of belonging can only be achieved through real life human interaction. Children need be taught about this subject  matter and increasing their self-esteem. Merging of technologies in human life need to conscious and should be maintained consciously. </p>
+				</div>	
+			</div>
+			<!--Division for other blogs-->
+			<div class="otherblog">
+				<h2 style="font-family: cursive;">Sign up for more blogs</h2> <br>
+				<!--Overriding internal CSS using inline CSS-->
+				<input id="Email" type="text" name="Email" placeholder="Your Email" style="height: 46px; width: 330px;">
+				<!--Executing a function on button click-->
+				<button onclick="signup()"> Sign up </button>
+				<p style="float:right;"> <a href="Blog.html"> More posts>>> </a>
+			</div>
+		</section>
+		<!--Using internal JavaScript-->
+		<script type="text/javascript">
+			//function that gives a alert box with message depending on the input condition
+			function signup() {
+				var email = document.getElementById('Email').value;
+				if(email == ""){
+					alert("Please enter the valid email address.");
+				} else {
+					alert("Thank you for signing up.");
+				}
+			}
+		</script>
+		<!--Footer section of the page-->
+		<footer>
+			<!--using class attribute for styling footer section in external CSS and layouting three divisions as flex box-->
+			<div class="footersection">
+				<!--Division for subscribing newsletter with input box and button-->
+				<div class="footer-left">
+					<p class="p-primary">Subscribe to our newsletter ! </p>
+					<input id = "email" type="text" name="Email" placeholder="Your Email"> <br>
+					<!--button that executes a function on button click-->
+					<button onclick="subscribe()"> Subscribe </button> </br>
+				</div>
+				<!--Division for "about us" with heading and a paragraph-->
+				<div class="footer-center">
+					<h2> About us </h2>
+					<p> Savour is a store dedicated to selling quality electronic gadgets at affordable price. <br>
+						Based in Kathmandu, you can find every gadgets and accessories of your needs.  </p> 
+				</div>
+				<!--Division with various links for navigating styled by internal CSS-->
+				<div class="footer-right">
+					<ul class="footer-list">
+						<li> <h3>Explore </h3></li>
+						<!--Using inline CSS to change text color-->
+						<li><a href="../Home.html" style="color: white;"> Home </a>
+						<li><a href="Products.html" style="color: white;"> Products </a>
+						<li><a href="#" style="color: white;"> Blog</a></li>
+						<li><a href="Research.html" style="color: white;"> Research</a></li>
+						<li><a href="ContactUs.html" style="color: white;">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+			<br>
+			<img src="../Image/logopng.png">
+			<p> Copyright &copy; Savour 2021. All rights reserved! </p>
+		</footer>
+	</body>
+</html>

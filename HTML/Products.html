@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Using meta tag-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" keywords = "Best deals on products ranging from SmartPhones, Laptops to TVs.">
+		<meta name="keywords" content="Best deals, Affordable Price, Best Products">
+
+		<!--Title of the page-->
+		<title>
+		Savour | Products
+		</title>
+
+		<!--Specifying the reference external CSS file named "External CSS" for using it in this page using href attribute-->
+		<link rel="stylesheet" type="text/css" href="../CSS/External CSS.css">
+
+		<!--Specifying the URL of external script file named "External JS" for using it in this page using src attribute-->
+		<script src="../JavaScript/External JS.js"></script>
+
+		<!--Using internal CSS-->
+		<style type="text/css">
+			/* For hiding the elements */
+			.hide {
+				display: none;
+			}
+
+			/* For styling different items in each product category */
+			.eachsection {
+				display: flex;
+				margin: 0px;
+				padding: 10px;
+				text-align: center;
+				background-color: whitesmoke;
+				border-radius: 10px;
+			}
+
+			/* For styling each item in a product category */
+			.eachitem {
+				height: 365px;
+				width: 300px;
+				padding: 10px;
+				background-color: white;
+				margin: 2px;
+				border-radius: 10px;
+			}
+
+			/* For styling products' images */
+			.products{
+				height: 100px;
+				float: left;
+				padding: 10px;
+			
+			}
+
+			/* For styling products' images */
+			.products1{
+				height: 210px;
+				padding: 10px;
+			}
+
+			/* For styling unordered list */
+			ul {
+				list-style-type: none;
+				float: right;
+			}
+
+			/* For styling the price of products */
+			.price {
+				color: orangered;
+				font-family: sans-serif;
+				font-weight: 600;
+
+			}
+
+			/* For styling Featured products section */
+			#featuresection {
+				background-color: white;
+			}
+
+			/* For styling each divisions of Featured products section */
+			.featurecontainer {
+				background-color: whitesmoke;
+				display: flex;
+				border-radius: 10px;
+				margin: 10px;
+			}
+
+			/* For styling the division containing image in Featured products section */
+			.featureimage {
+				padding-left: 200px;
+				padding-top: 40px;
+			}
+
+			/* For styling the image in Featured Products section */
+			.fimage {
+				height: 400px;
+				width: 400px;
+			}
+
+			/* For styling the division containing details of the products in Featured Products section */
+			.featuredetails {
+				text-align: center;
+				background-color: white;
+				border-radius: 10px;
+				height: 593px;
+				width: 593px;
+				margin: 40px;
+
+			}
+
+			/* For styling the button with Add to Wishlist in Featured products section */
+			.featurewishlist {
+				background-color:#222758;
+				height:30px;
+				border: 1px grey solid;
+				width: 200px;
+				font-size: 18px;
+				margin-left: 178px;
+				border-radius: 10px;
+				color: white;
+				cursor: pointer;
+			}
+
+			/* For styling the button with Buy Now in Featured products section */
+			.featurebuy {
+				background-color: #222758;
+			    height: 37px;
+			    width: 250px;
+			    font-size: 20px;
+			    margin-left: 178px;
+			    border-radius: 10px;
+			    color: white;
+			    cursor: pointer;
+			    margin-top: 10px;
+			}
+
+			/* For styling button with Another Color Option */
+			.featurechange {
+				background-color: #222758;
+				color: white;
+				border-radius: 10px;
+				cursor: pointer;
+			}
+
+			/* For styling the button with Buy Now */
+			.wishlist {
+				background-color:#222758;
+				height:30px;
+				border: 1px grey solid;
+				width: 200px;
+				font-size: 18px;
+				margin-left: 15px;
+				border-radius: 10px;
+				color: white;
+				cursor: pointer;
+			}
+
+			/* For styling the button with Buy Now */
+			.buy {
+				background-color: #222758;
+			    height: 37px;
+			    width: 250px;
+			    font-size: 20px;
+			    margin-left: 15px;
+			    border-radius: 10px;
+			    color: white;
+			    cursor: pointer;
+			    margin-top: 10px;	
+			}
+
+			/* For styling the input box having text type*/
+			input[type = text] {
+			    height: 33px;
+			    width: 251px;
+			    box-sizing: border-box;
+			    border-radius: 10px;
+			    background-color: #dddddd;
+			    padding: 10px;
+			    border: 2px transparent;
+			    outline: none;
+			    transition: all;
+			   	transition-delay: 0.2s;
+			}
+
+			/* For styling input box after it has been clicked */
+			input[type = text]:focus {
+				border: 2px solid;
+				background-color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<!--Navigation portion of the webpage-->
+		<nav>
+			<!--
+			  Section for adding and styling the logo of the store
+			  id attribute has been used which is used is used to point to a specific style declaration in external CSS file.
+			-->
+			<div id="logo">
+				<img src="../Image/LOGO.png">
+			</div>
+			<!--Navigation bar of Home page by styling with inline CSS-->
+			<table style="width:70%; margin:auto;">
+				<tr style="height:50%; font-family: sans-serif;">
+					<!--using href attribute to add links to other pages-->
+					<th class="navigation">
+						<a href="../Home.html"> Home </a>
+					</th>
+					<th class="navigationcurrent">
+						<a href="#"> Products </a>
+					</th>
+					<th class="navigation">
+						<a href="Blog.html"> Blog </a>
+					</th>
+					<th class="navigation">
+						<a href="Research.html"> Research </a>
+					</th>
+					<th class = "navigation">
+						<a href="ContactUs.html"> Contact Us </a>
+					</th>
+				</tr>
+			<table>
+		</nav>
+
+	    <!-- Section for adding background image with text over it-->
+		<section id="backgroundSection">
+			<!--Using class attribute for implementing CSS-->
+			<h1 class = "h1-primary"> We sell the finest products. </h1>
+		</section>
+
+		<!--Section for showcasing featured products in details-->
+		<section id="featuresection">
+			<header>
+				<h1 class="h1-primary"> Featured products </h1> <hr>
+			</header>
+			<!--Division for showcasing featured products-->
+			<div class="featurecontainer">
+				<!--Division for adding and styling image-->
+				<div class="featureimage">
+					<!--Using id attribute for adding functionality using JavaScript-->
+					<img class="fimage" id="feature1" src="../Image/mobilephonefeature.png">
+					<img class="fimage hide" id="feature2" src="../Image/mobilephonefeaturehide.png"> <br>
+					<!--button that executes changecolor() function on button click--> 
+					<button class="featurechange" style="float: left;" onclick="changecolor()"> Another color option </button>
+				</div>
+				<!--Division for adding details regarding the product-->
+				<div class="featuredetails"> 
+					<!--Styling using inline CSS-->
+					<h2 style="font-size: 30px;"> Samsung Galaxy S21 Ultra 5G</h2>
+					<p> <em style="font-size: 25px;"> "EveryDay Epic" </em> </p>
+					<ul style="float: none; font-size: 19px;">
+		   				<li> <b>Details: </b> </li>
+		   				<li> Dimensions: 6.5 x 2.98 x 0.35 in</li>
+		     			<li> Weight: 227g</li>
+		     		</ul>
+					<ul style="float: none; font-size: 19px;">
+		     			<li> <b>Features: </b> </li>
+		     			<li> OS: Android 11 with One UI 3.1 </li>
+		     			<li> Chipset: Exynos 2100/Qualcomm SM8350 Snapdragon 888 5G</li>
+		     			<li> 120Hz Refresh Rate with 1200 nits (peak) Brightness</li>
+		     			<li> 108 MP Main Camera with 12 MP Ultrawide Camera</li>
+		     			<li> 40 MP Front Camera</li>
+		     			<li> Memory: 128GB 12GB RAM</li>
+		     			<li> Li-Ion 5000 mAh Battery with 25W Fast Charging</li>
+		     			<li> Available colors: Phantom Black, Phantom Silver, Phantom Titanium, Navy</li>
+		     		</ul>
+		     		<p class = "price" style="font-size: 19px;"> Rs. 1,29,990 </p>
+		     		<!--Division for adding a delivery icon-->
+		     		<div style="float: right; margin-left: -30px">
+			     		<figure>
+			     			<!--Styling using inline CSS-->
+				     		<img src="../Image/deliveryicon.png" style="height: 50px; width: 50px; ">
+				     		<figcaption style="font-size:10px;" > Delivery Option Available</figcaption>
+			     		</figure>
+		     	    </div>
+		     	    <!--button that executes buttonwishlist() on button click-->
+		     		<button onclick="buttonwishlist()" class="featurewishlist">Add to Wishlist</button> <br>
+		     		<!--button that executes buttonbuy() on button click-->
+		     		<button onclick="buttonbuy()" class="featurebuy"> Buy Now </button>
+				</div>
+			</div>
+
+			<!--Division for showcasing featured products-->
+			<div class="featurecontainer">
+				<!--Division for adding and styling image-->
+				<div class="featureimage">
+					<img class="fimage" src="../Image/laptopfeature.png">
+				</div>
+				<!--Division for adding details regarding the product-->
+				<div class="featuredetails">
+					<!--Styling using inline CSS--> 
+					<h2 style="font-size: 30px;">Asus ROG Zephyrus G14 <br>GA401IH-HE072T</h2>
+					<p> <em style="font-size: 25px;"> "Inspiring Innovation • Persistent Perfection" </em> </p>
+					<ul style="float: none; font-size: 19px;">
+		     			<li> <b>Features: </b> </li>
+		     			<li> OS: Windows 10 Pro </li>
+		     			<li> Processor: AMD Ryzen™ 7 4800HS Processor 2.9 GHz (8M Cache, up to 4.2 GHz)</li>
+		     			<li> Graphics: NVIDIA® GeForce® GTX 1650 4GB GDDR6</li>
+		     			<li> Display: 14-inch FHD (1920 x 1080) 16:9</li>
+		     			<li> Memory: 16GB DDR4-3200 SO-DIMM</li>
+		     			<li> Storage: 1TB M.2 NVMe™ PCIe® 3.0 SSD</li>
+		     			<li> Supports Wifi-6 and Bluetooth 5.0</li>
+		     			<li> Battery: 76WHrs, 4S1P, 4-cell Li-ion</li>
+		     			<li> Weight: 1.70 Kg</li>
+		     			<li> Audio: Smart Amp Technology, Dolby Atmos, Built-in array microphone</li>
+		     		</ul>
+		     		<p class = "price" style="font-size: 19px;"> Rs. 2,05,000 </p>
+		     		<!--Division for adding a delivery icon-->
+		     		<div style="float: right; margin-left: -30px">
+			     		<figure>
+				     		<img src="../Image/deliveryicon.png" style="height: 50px; width: 50px; ">
+				     		<figcaption style="font-size:10px;" > Delivery Option Available</figcaption>
+			     		</figure>
+		     	    </div>
+		     	    <!--button that executes buttonwishlist() on button click-->
+		     		<button onclick="buttonwishlist()" class="featurewishlist">Add to Wishlist</button> <br>
+		     		<!--button that executes buttonbuy() on button click-->
+		     		<button onclick="buttonbuy()" class="featurebuy"> Buy Now </button>
+				</div>
+			</div>
+			<!--Division for showcasing featured product-->
+			<div class="featurecontainer">
+				<!--Division for adding and styling image-->
+				<div class="featureimage">
+					<img class="fimage" src="../Image/mobilephone3.png">
+				</div>
+				<!--Division for adding details of featured products-->
+				<div class="featuredetails"> 
+					<h2 style="font-size: 30px;"> Iphone 13 Pro Max</h2>
+					<p> <em style="font-size: 25px;"> "Oh. So. Pro" </em> </p>
+					<ul style="float: none; font-size: 19px;">
+		   				<li> <b>Details: </b> </li>
+		   				<li> Dimensions: 6.33 x 3.07 x 0.30 in</li>
+		     			<li> Weight: 240 g</li>
+		     		</ul>
+					<ul style="float: none; font-size: 19px;">
+		     			<li> <b>Features: </b> </li>
+		     			<li> OS: iOS 15, upgradable to iOS 15.2 </li>
+		     			<li> Chipset: Apple A15 Bionic</li>
+		     			<li> Super Retina XDR OLED Display with 120Hz Refresh Rate</li>
+		     			<li> 12 MP Main Camera with 12 MP Ultrawide Camera</li>
+		     			<li> 12 MP Front Camera</li>
+		     			<li> Memory: 128GB 6GB RAM</li>
+		     			<li> Li-Ion 4352 mAh Battery with 27W Fast Charging</li>
+		     			<li> Available colors: Graphite, Gold, Silver, Sierra Blue</li>
+		     		</ul>
+		     		<p class = "price" style="font-size: 19px;"> Rs. 1,74,990 </p>
+		     		<!--Division for adding delivery logo-->
+		     		<div style="float: right; margin-left: -30px">
+			     		<figure>
+			     			<img src="../Image/deliveryicon.png" style="height: 50px; width: 50px; ">
+			     			<figcaption style="font-size:10px;" > Delivery Option Available</figcaption>
+			     		</figure>
+		     	    </div>
+		     	    <!--button that executes buttonwishlist() on button click-->
+		     		<button onclick="buttonwishlist()" class="featurewishlist">Add to Wishlist</button> <br>
+		     		<!--button that executes buttonbuy() on button click-->
+		     		<button onclick="buttonbuy()" class="featurebuy"> Buy Now </button>
+				</div>
+			</div>
+			<!--Link that refreshes the page-->
+			<h2 style="float: right; margin: auto;"> <a href="Products.html">More Products...</a></h2> 
+		</section>
+		<br>
+
+	     <!--Section showcasing the products that are sold in the store-->
+	    <section>
+	    	<header>
+	     		<h1 class="h1-primary"> Our Products </h1> <hr>
+	     	</header>
+	     	<h2> Mobiles </h2>
+	     	<!--Division for different items in each category-->
+	     	<div class="eachsection">
+	     		<!--Division for each item in a category-->
+	     		<div class = "eachitem">
+	     			<!--using class attribute with products as value for styling image-->
+	     			<img class="products" src="../Image/mobilephone1.png">
+	     			<h3> Samsung Galaxy A52 </h3>
+	     			<em > "Awesome is for everyone" </em>
+	     			<p class = "price"> Rs. 41,000 </p>
+		     		<ul>
+		     			<li> <b>Features: </b> </li>
+		     			<li> Super AMOLED Display</li>
+		   				<li> 90Hz Refresh Rate</li>
+		   				<li> 800 nits (HBM) </li>
+		   				<li> 128GB ROM 6GB RAM</li>
+	     				<li> 32 MP Front Camera</li>
+		     			<li> Li-Po 4500 mAh Battery</li>
+		     			<li> Snapdragon 720G Chipset</li>
+		   			</ul>
+		   			<!--button that executes buttonwishlist() function on button click-->
+		   			<button onclick="buttonwishlist()" class="wishlist" style="height: 25px; width: 100px; font-size: 12px;">Add to Wishlist</button> <br>
+		   			<!--button that executes buttonbuy() function on button click-->
+		     		<button onclick="buttonbuy()" class="buy" style="height: 29px; width: 150px; font-size: 17px; margin-top: 5px;-"> Buy Now </button>
+	     		</div>
+	     		<!--Division for each item in a category-->
+	     		<div class = "eachitem">
+	     			<!--using class attribute with products as value for styling image-->
+	     			<img class="products" src="../Image/mobilephone.png">
+	     			<h3> Samsung Galaxy S21 FE </h3>
+	     			<em > "Everyday Epic" </em>
+	     			<p class = "price"> Rs. 80,000 </p>
+		  			<ul>
+	    				<li> <b>Features: </b> </li>
+	    				<li> Dynamic AMOLED 2X </li>
+		     			<li> 120Hz Refresh Rate </li>
+		     			<li> Android 12 OS </li>
+		     			<li> 128GB ROM 6GB RAM</li>
+		     			<li> 32 MP Front Camera</li>
+		   				<li> Li-Po 4500 mAh Battery</li>
+		   				<li> Snapdragon 888 Chipset</li>
+	     			</ul>
+	     			<!--button that executes buttonwishlist() function on button click-->
+	     			<button onclick="buttonwishlist()" class="wishlist" style="height: 25px; width: 100px; font-size: 12px;">Add to Wishlist</button> <br>
+	     			<!--button that executes buttonbutton() function on button click-->
+		     		<button onclick="buttonbuy()" class="buy" style="height: 29px; width: 150px; font-size: 17px; margin-top: 5px;-"> Buy Now </button>
+	     		</div>
+	     		<!--Division for each item in a category-->
+	     		<div class = "eachitem">
+	     			<!--using class attribute with products as value for styling image-->
+		     		<img class="products" src="../Image/mobilephone3.png">
+		     		<h3> Iphone 13 Pro Max </h3>
+		     		<em > "Oh. So. Pro" </em>
+		     		<p class = "price"> Rs. 1,50,000 </p>
+			     	<ul>
+		     			<li> <b>Features: </b> </li>
+		    			<li> Super Retina XDR OLED </li>
+			   			<li> 120Hz Refresh Rate </li>
+			   			<li> iOS 15 OS </li>
+			     		<li> 1TB 6GB RAM</li>
+			     		<li> 12 MP Front Camera</li>
+			     		<li> Li-Ion 4352 mAh Battery</li>
+			     		<li> Apple A15 Bionic Chipset</li>
+			     	</ul>
+			     	<!--button that executes buttonwishlist() function on button click-->
+			     	<button onclick="buttonwishlist()" class="wishlist" style="height: 25px; width: 100px; font-size: 12px;">Add to Wishlist</button> <br>
+			     	<!--button that executes buttonbuy() function on button click-->
+		     		<button onclick="buttonbuy()" class="buy" style="height: 29px; width: 150px; font-size: 17px; margin-top: 5px;-"> Buy Now </button>
+	     		</div>
+	     		<!--Division for each item in a category-->
+	     		<div class="eachitem">
+	     			<!--using class attribute with products as value for styling image-->
+	     			<img class="products" src="../Image/mobilephone2.png">
+	     			<h3> OnePlus 9 Pro </h3>
+	     			<em > "Your Best Shot" </em>
+	     			<p class = "price"> Rs. 1,29,990 </p>
+		     		<ul>
+		     			<li> <b>Features: </b> </li>
+		     			<li> LTPO Fluid2 AMOLED </li>
+		     			<li> 120Hz Refresh Rate </li>
+		     			<li> Android 11 OS </li>
+		     			<li> 256GB 12GB RAM</li>
+		   				<li> 16 MP Front Camera</li>
+		   				<li> Li-Po 4500 mAh Battery</li>
+	     				<li> Snapdragon 888 Chipset</li>
+		     		</ul>
+		     		<!--button that executes buttonwishlist() function on button click-->
+		     		<button onclick="buttonwishlist()" class="wishlist" style="height: 25px; width: 100px; font-size: 12px;">Add to Wishlist</button> <br>
+		     		<!--button that executes buttonbuy() function on button click-->
+		     		<button onclick="buttonbuy()" class="buy" style="height: 29px; width: 150px; font-size: 17px; margin-top: 5px;-"> Buy Now </button>
+	     		</div>
+	     	</div>
+
+	     	<!-- A second row of products section under Mobiles-->
+	     	<div class="eachsection" style="justify-content: center;">
+	     		<!--Division for each item in a category-->
+	     		<div class = "eachitem">
+	     			<!--using class attribute with products as value for styling image-->
+	     			<img class="products" src="../Image/mobilephone4.png">
+	     			<h3> Redmi Note 10 Pro </h3>
+	     			<em > "The 108MP Voyager" </em>
+	     			<p class = "price"> Rs. 30,000 </p>
+		     		<ul>
+		     			<li> <b>Features: </b> </li>
+		     			<li> AMOLED Display</li>
+		     			<li> 120Hz Refresh Rate</li>
+		     			<li> 1200 nits (HBM) </li>
+		     			<li> 128GB ROM 6GB RAM</li>
+		     			<li> 16 MP Front Camera</li>
+		     			<li> Li-Po 5020 mAh Battery</li>
+		     			<li> Snapdragon 732G Chipset</li>
+		     		</ul>
+		     		<!--button that executes buttonwishlist() function on button click-->
+		     		<button onclick="buttonwishlist()" class="wishlist" style="height: 25px; width: 100px; font-size: 12px;">Add to Wishlist</button> <br>
+		     		<!--button that executes buttonbuy() function on button click-->
+		     		<button onclick="buttonbuy()" class="buy" style="height: 29px; width: 150px; font-size: 17px; margin-top: 5px;-"> Buy Now </button>
+	     		</div>
+	     		<!--Division for adding link-->
+	     		<div class = "eachitem" style="height: 77px;">
+	     				<h3><u><a href="Products.html"> Find out more >>></a> </u></h3>
+	     		</div>
+	     	</div>
+	     	<hr>
+	     	</br>
+
+	     <!--First row of products section under Laptops-->
+	     	<h2> Laptops </h2> 
+	     	<!--Division for different product in each category-->
+	     	<div class="eachsection">
+	     		<!--Division for each product in a category-->
+	     		<div class = "eachitem">
+	     			<!--Styling images using class attribute-->
+	     			<img class="products" src="../Image/laptop.png">
+	     			<h3> Dell XPS 15</h3>
+	     			<em > "Often imitated. Never Duplicated." </em>
+	     			<p class = "price"> Rs. 174,800 </p>
+		     		<ul>
+		     			<li> <b>Features: </b> </li>
+		     			<li> Intel® Core™ i7-10750H</li>
+		     			<li> Windows 10 Home English</li>
+		     			<li> 15.6" FHD+ (1920 x 1200) InfinityEdge Non-Touch Anti-Glare 500-Nit Display </li>
+		     			<li> 16GB DDR4-2933MHz</li>
+		     			<li> 512GB M.2 PCIe NVMe SSD</li>
+		     		</ul>
+		     		<!--button that executes buttonwishlist() function on button click-->
+		     		<button onclick="buttonwishlist()" class="wishlist" style="height: 25px; width: 100px; font-size: 12px;">Add to Wishlist</button> <br>
+		     		<!--button that executes buttonbuy() function on button click-->
+		     		<button onclick="buttonbuy()" class="buy" style="height: 29px; width: 150px; font-size: 17px; margin-top: 5px;-"> Buy Now </button>
+	     		</div>
+	     		<!--Division for each product in a category-->
+	     		<div class = "eachitem">
+	     			<!--Styling images using class attribute-->
+	     			<img class="products" src="../Image/laptop1.png">
+	     			<h3> Asus Zenbook 14 </h3>
+     				<em > "Inspiring Innovation" </em>
+     				<p class = "price"> Rs. 116,000 </p>
+	     			<ul>
+	     				<li> <b>Features: </b> </li>
+	     				<li> AMD Ryzen R5-3500U Processor </li>
+	     				<li> Windows 10 Pro </li>
+	     				<li> 1TB PCIe® 3.0 x4 SSD </li>
+	    				<li> NVIDIA® GeForce® MX150</li>
+	     				<li> 16GB 2133MHz LPDDR3</li>
+	     			</ul>
+	     			<!--button that executes buttonwishlist() function on button click-->
+		     		<button onclick="buttonwishlist()" class="wishlist" style="height: 25px; width: 100px; font-size: 12px;">Add to Wishlist</button> <br>
+		     		<!--button that executes buttonbuy() function on button click-->
+		     		<button onclick="buttonbuy()" class="buy" style="height: 29px; width: 150px; font-size: 17px; margin-top: 5px;-"> Buy Now </button>
+     			</div>
+     			<!--Division for each product in a category-->
+     			<div class = "eachitem">
+     				<!--Styling images using class attribute-->
+	     			<img class="products" src="../Image/laptop2.png">
+	     			<h3> Legion 5 </h3>
+     				<em > "Savage inside" </em>
+     				<p class = "price"> Rs. 220,000 </p>
+	     			<ul>
+	     				<li> <b>Features: </b> </li>
+	     				<li> AMD Ryzen™ 7 5800H </li>
+	     				<li> NVIDIA® GeForce RTX™ 3060 </li>
+	     				<li> 15.6" FHD (1920 x 1080) IPS </li>
+	     				<li>  32 GB DDR4 3200MHz</li>
+	     			</ul>
+	     			<!--button that executes buttonwishlist() function on button click-->
+		     		<button onclick="buttonwishlist()" class="wishlist" style="height: 25px; width: 100px; font-size: 12px;">Add to Wishlist</button> <br>
+		     		<!--button that executes buttonbuy() function on button click-->
+		     		<button onclick="buttonbuy()" class="buy" style="height: 29px; width: 150px; font-size: 17px; margin-top: 5px;-"> Buy Now </button>
+     			</div>
+     			<!--Division for each product in a category-->
+     			<div class="eachitem">
+     				<!--Styling images using class attribute-->
+     				<img class="products" src="../Image/laptop3.png">
+     			<h3> Dell Alienware M15 R6 </h3>
+     				<em > "High-performance gaming systems" </em>
+     				<p class = "price"> Rs. 1,76,000 </p>
+	     			<ul>
+	     				<li> <b>Features: </b> </li>
+	     				<li> Intel Core i9-11900H </li>
+	     				<li> NVIDIA GeForce RTX 3070 </li>
+	     				<li> Windows 11 Home </li>
+	     				<li> 2000GB SSD</li>
+	     				<li> 32GB DDR4 RAM</li>
+	     			</ul>
+	     			<!--button that executes buttonwishlist() function on button click-->
+		     		<button onclick="buttonwishlist()" class="wishlist" style="height: 25px; width: 100px; font-size: 12px;">Add to Wishlist</button> <br>
+		     		<!--button that executes buttonbuy() function on button click-->
+		     		<button onclick="buttonbuy()" class="buy" style="height: 29px; width: 150px; font-size: 17px; margin-top: 5px;-"> Buy Now </button>
+     			</div>
+	     	</div>
+
+	     	<!-- A second row of products section under Laptops-->
+	     	<div class="eachsection" style="justify-content: center;">
+	     		<!--Division for a link that refreshes the page-->
+	     		<div class = "eachitem" style="height: 77px;">
+	     			<h3><u><a href="Products.html"> Find out more >>></a> </u></h3>
+	     		</div>
+	     	</div>
+	     	<hr>
+	     	<br>
+
+
+	     	 <!--First row of products section under Earphones-->
+	     	<h2> Earphones and Headphones </h2> 
+	     	<!--Division for different products in each category-->
+	     	<div class="eachsection">
+	     		<!--Division for each product in a category -->
+	     		<div class = "eachitem" style="height: 385px;">
+	     			<!--Styling image with class attribute-->
+	     			<img class="products1" src="../Image/earphone.png">
+	     			<h3> Redmi Sonicbass Wireless Earphone</h3>
+	     			<p class = "price"> Rs. 2,099 </p>
+	     			<!--button that executes buttonwishlist() function on button click-->
+	     			<button onclick="buttonwishlist()" class="wishlist" style="height: 25px; width: 100px; font-size: 12px;">Add to Wishlist</button> <br>
+	     			<!--button that executes buttonbuy() function on button click-->
+		     		<button onclick="buttonbuy()" class="buy" style="height: 29px; width: 150px; font-size: 17px; margin-top: 5px;-"> Buy Now </button>
+	     		</div>
+
+	     		<!--Division for each product in a category -->
+	     		<div class = "eachitem" style="height: 385px;">
+	     			<!--Styling image with class attribute-->
+	     			<img class="products1" src="../Image/earphone2.png">
+	     			<h3> Mi True Wireless Earphone </h3>
+	     			<p class = "price"> Rs. 4,799 </p>		
+	     			<!--button that executes buttonwishlist() function on button click-->
+	     			<button onclick="buttonwishlist()" class="wishlist" style="height: 25px; width: 100px; font-size: 12px;">Add to Wishlist</button> <br>
+	     			<!--button that executes buttonbuy() function on button click-->
+		     		<button onclick="buttonbuy()" class="buy" style="height: 29px; width: 150px; font-size: 17px; margin-top: 5px;-"> Buy Now </button>
+	     		</div>
+
+	     		<!--Division for each product in a category -->
+	     		<div class = "eachitem" style="height: 385px;">
+	     			<img class="products1" src="../Image/headphone.png">
+	     			<h3> HappyPlugs Youth Play </h3>
+	     			<p class = "price"> Rs. 9,350 </p>
+	     			<!--button that executes buttonwishlist() function on button click-->
+	     			<button onclick="buttonwishlist()" class="wishlist" style="height: 25px; width: 100px; font-size: 12px;">Add to Wishlist</button> <br>
+	     			<!--button that executes buttonbuy() function on button click-->
+		     		<button onclick="buttonbuy()" class="buy" style="height: 29px; width: 150px; font-size: 17px; margin-top: 5px;-"> Buy Now </button>
+	     		</div>	
+	     		<!--Division for adding a link that refreshes the page-->
+	     		<div class="eachsection" style="justify-content: center;">
+	     			<div class = "eachitem" style="height: 77px;">
+	    				<h3><u><a href="Products.html"> Find out more earphones >>> </a> </u></h3>
+	     			</div>
+	     		</div>
+	     	</div>	
+	     	<hr>
+	     	<br>
+	     	<!--First row of products section under TVs-->
+	     	<h2> TVs </h2> 
+	     	<!--Division for different products in each category-->
+	     	<div class="eachsection">
+	     		<!--Division for each product in a category -->
+	     		<div class = "eachitem" style="height: 385px;">
+	     			<!--Styling image using class attribute-->
+	     			<img class="products1" src="../Image/tv.png" style="height: 200px">
+	     			<h3> HiSense 32-inch Smart TV</h3>
+	     			<p class = "price"> Rs. 36,690 </p>	
+	     			<!--button that executes buttonwishlist() function on button click-->
+	     			<button onclick="buttonwishlist()" class="wishlist" style="height: 25px; width: 100px; font-size: 12px;">Add to Wishlist</button> <br>
+	     			<!--button that executes buttonbuy() function on button click-->
+		     		<button onclick="buttonbuy()" class="buy" style="height: 29px; width: 150px; font-size: 17px; margin-top: 5px;-"> Buy Now </button>
+	     		</div>
+	     		<!--Division for each product in a category -->
+	     		<div class = "eachitem" style="height: 385px;">
+	     			<!--Styling image using class attribute-->
+	     			<img class="products1" src="../Image/tv2.png" style="height: 200px">
+	     			<h3> TCL 32-inch Smart Andrioid TV </h3>
+	     			<p class = "price"> Rs. 44,990 </p>	
+	     			<!--button that executes buttonwishlist() function on button click-->
+					<button onclick="buttonwishlist()" class="wishlist" style="height: 25px; width: 100px; font-size: 12px;">Add to Wishlist</button> <br>
+					<!--button that executes buttonbuy() function on button click-->
+		     		<button onclick="buttonbuy()" class="buy" style="height: 29px; width: 150px; font-size: 17px; margin-top: 5px;-"> Buy Now </button>
+	     		</div>
+
+	     		<!--Division for each product in a category -->
+	     		<div class = "eachitem" style="height: 385px;">
+	     			<!--Styling image using class attribute-->
+	     			<img class="products1" src="../Image/tv3.png">
+	     			<h3> Mi 75-inch QLED TV </h3>
+	     			<p class = "price"> Rs. 174,597 </p>
+	     			<!--button that executes buttonwishlist() function on button click-->
+	     			<button onclick="buttonwishlist()" class="wishlist" style="height: 25px; width: 100px; font-size: 12px;">Add to Wishlist</button> <br>
+	     			<!--button that executes buttonbuy() function on button click-->
+		     		<button onclick="buttonbuy()" class="buy" style="height: 29px; width: 150px; font-size: 17px; margin-top: 5px;-"> Buy Now </button>
+	     		</div>
+
+	     		<!--Division for each product in a category -->
+				<div class = "eachitem" style="height: 385px;">
+					<!--Styling image using class attribute-->
+	     			<img class="products1" src="../Image/tv1.png">
+	     			<h3> Samsung 40-inch Smart TV </h3>
+	     			<p class = "price"> Rs. 40,000 </p>
+	     			<!--button that executes buttonwishlist() function on button click-->
+	     			<button onclick="buttonwishlist()" class="wishlist" style="height: 25px; width: 100px; font-size: 12px;">Add to Wishlist</button> <br>
+	     			<!--button that executes buttonbuy() function on button click-->
+		     		<button onclick="buttonbuy()" class="buy" style="height: 29px; width: 150px; font-size: 17px; margin-top: 5px;-"> Buy Now </button>
+	     		</div>
+	     	</div>
+
+	     	<!--Second row of TVs section-->
+	     	<!--Division for a link that refreshes the page-->
+	     	<div class="eachsection" style="justify-content: center;">
+	     			<div class = "eachitem" style="height: 77px;">
+	    			<h3><u><a href="Products.html"> Find out more TVs>> </a> </u></h3>
+	     		</div>
+	     	</div>
+	     	<br>
+	     	<!--Last row for this section -->
+	     	<!--Division for a link that refreshes the page-->
+	     	<div class="eachsection" style="justify-content: center;">
+	     			<div class = "eachitem" style="height: 77px;">
+	    			<h3><u><a href="Products.html"> Explore more products... </a> </u></h3>
+	     		</div>
+	     	</div>
+	    </section>
+		<hr>
+		<!--Using internal JavaScript-->
+		<script type="text/javascript">
+			//function that changes the images by hiding one image and showing another image
+			function changecolor() {
+				var image1 = document.getElementById('feature1');
+				var image2 = document.getElementById('feature2');
+				if(image1.style.display == "none") {
+					image1.style.display = "block";
+					image2.style.display = "none";
+				} else {
+					image1.style.display = "none";
+					image2.style.display = "block";
+				}
+			}
+		</script>
+		<!--Footer section-->
+		<footer>
+			<!--using class attribute for styling footer section in external CSS and layouting three divisions as flex box-->
+			<div class="footersection">
+				<!--Division for subscribing newsletter with input box and button-->
+				<div class="footer-left">
+					<p class="p-primary">Subscribe to our newsletter ! </p>
+					<input id = "email" type="text" name="Email" placeholder="Your Email"> <br>
+					<!--button that executes a function on button click-->
+					<button onclick="subscribe()"> Subscribe </button> </br>
+				</div>
+				<!--Division for "about us" with heading and a paragraph-->
+				<div class="footer-center">
+					<h2> About us </h2>
+					<p> Savour is a store dedicated to selling quality electronic gadgets at affordable price. <br>
+						Based in Kathmandu, you can find every gadgets and accessories of your needs.  </p> 
+				</div>
+				<!--Division with various links for navigating styled by internal CSS-->
+				<div class="footer-right">
+					<ul class="footer-list">
+						<li> <h3>Explore </h3></li>
+						<!--Using inline CSS to change text color-->
+						<li><a href="../Home.html" style="color: white;"> Home </a>
+						<li><a href="#" style="color: white;"> Products </a>
+						<li><a href="Blog.html" style="color: white;"> Blog</a></li>
+						<li><a href="Research.html" style="color: white;"> Research</a></li>
+						<li><a href="ContactUs.html" style="color: white;">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+			<br>
+			<img src="../Image/logopng.png">
+			<p> Copyright &copy; Savour 2021. All rights reserved! </p>
+		</footer>
+	</body>
+	
+</html>
